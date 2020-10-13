@@ -11,7 +11,8 @@
     <link rel="stylesheet" type="text/css" href="css/demo.css" />
     <link rel="stylesheet" href="css/jquery.fancybox.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="css/jquery.fancybox-buttons.css" type="text/css" media="screen" />
-    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <!-- <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script> -->
+    <script src="./js/jquery-latest.min.js"></script>
     <script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
     <script type="text/javascript" src="js/jquery.fancybox-buttons.js"></script>
     <style>
@@ -24,317 +25,357 @@
     </style>
   </head>
   <body>
-      <header class="main-menu">
-          <h1 class="icon icon-lab">
-              <a href="javascript:;">
-                  <img src="images/logo.png" alt="">
-              </a>
-          </h1>
-          <nav class="menu-wrap">
-              <ul class="nav nav-list nav-list-dot">	
-                  <li>
-                      <a class="accordion-heading" data-toggle="collapse" data-target="#submenu1-1">
-                          <span class="nav-header-primary">土城崛起</span>
-                          <span class="pull-right"><b class="caret"></b></span>
-                      </a>
-                      <ul class="nav nav-list collapse submenu1" id="submenu1-1">
-                          <li>
-                              <a class="accordion-heading" data-toggle="collapse" data-target="#submenu1-2">
-                                  <span>大環境</span>  
-                                  <span class="pull-right"><b class="caret"></b></span>
-                              </a>
-                              <ul class="nav nav-list collapse submenu2" id="submenu1-2">
-                                  <li><a href="#" title="Title">關於我們</a></li>
-                                  <li><a href="#" title="Title">建築亮點</a></li>
-                              </ul>
-                          </li>
-                      </ul>
-                  </li>
-              </ul>
-              <ul class="nav nav-list nav-list-dot">	
-                  <li>
-                      <a class="accordion-heading" data-toggle="collapse" data-target="#submenu2-1">
-                          <span class="nav-header-primary">宜居首選</span>
-                          <span class="pull-right"><b class="caret"></b></span>
-                      </a>
-                      <ul class="nav nav-list collapse submenu1" id="submenu2-1">
-                          <li>
-                              <a class="accordion-heading" data-toggle="collapse" data-target="#submenu2-2">
-                                  <span>第二層</span>  
-                                  <span class="pull-right"><b class="caret"></b></span>
-                              </a>
-                              <ul class="nav nav-list collapse submenu2" id="submenu2-2">
-                                  <li><a href="#" title="Title">關於我們</a></li>
-                                  <li><a href="#" title="Title">建築亮點</a></li>
-                              </ul>
-                          </li>
-                      </ul>
-                  </li>
-              </ul>
-              <ul class="nav nav-list nav-list-dot">	
-                  <li>
-                      <a class="accordion-heading" data-toggle="collapse" data-target="#submenu3-1">
-                          <span class="nav-header-primary">精工建築</span>
-                          <span class="pull-right"><b class="caret"></b></span>
-                      </a>
-                      <ul class="nav nav-list collapse submenu1" id="submenu3-1">
-                          <li>
-                              <a class="accordion-heading" data-toggle="collapse" data-target="#submenu3-2">
-                                  <span>第二層</span>  
-                                  <span class="pull-right"><b class="caret"></b></span>
-                              </a>
-                              <ul class="nav nav-list collapse submenu2" id="submenu3-2">
-                                  <li><a href="#" title="Title">關於我們</a></li>
-                                  <li><a href="#" title="Title">建築亮點</a></li>
-                              </ul>
-                          </li>
-                      </ul>
-                  </li>
-              </ul>
-              <ul class="nav nav-list nav-list-dot">	
-                  <li>
-                      <a class="accordion-heading" data-toggle="collapse" data-target="#submenu4-1">
-                          <span class="nav-header-primary">職人團隊</span>
-                          <span class="pull-right"><b class="caret"></b></span>
-                      </a>
-                      <ul class="nav nav-list collapse submenu1" id="submenu4-1">
-                          <li>
-                              <a class="accordion-heading" data-toggle="collapse" data-target="#submenu4-2">
-                                  <span>第二層</span>  
-                                  <span class="pull-right"><b class="caret"></b></span>
-                              </a>
-                              <ul class="nav nav-list collapse submenu2" id="submenu4-2">
-                                  <li><a href="#" title="Title">關於我們</a></li>
-                                  <li><a href="#" title="Title">建築亮點</a></li>
-                              </ul>
-                          </li>
-                      </ul>
-                  </li>
-              </ul>
-              <ul class="nav nav-list nav-list-dot">	
-                  <li>
-                      <a class="accordion-heading" data-toggle="collapse" data-target="#submenu5-1">
-                          <span class="nav-header-primary">媒體報導</span>
-                          <span class="pull-right"><b class="caret"></b></span>
-                      </a>
-                      <ul class="nav nav-list collapse submenu1" id="submenu5-1">
-                          <li>
-                              <a class="accordion-heading" data-toggle="collapse" data-target="#submenu5-2">
-                                  <span>第二層</span>  
-                                  <span class="pull-right"><b class="caret"></b></span>
-                              </a>
-                              <ul class="nav nav-list collapse submenu2" id="submenu5-2">
-                                  <li><a href="#" title="Title">關於我們</a></li>
-                                  <li><a href="#" title="Title">建築亮點</a></li>
-                              </ul>
-                          </li>
-                      </ul>
-                  </li>
-              </ul>
-              <ul>
-  
-              </ul>
-          </nav>
-      </header>
-      <!--main content start-->
-      <div class="main">
-        <div id="map-wrapper">
-          <div id="map">
-            <div class="map-objects-wrapper">
-                <img src="images/map-items/map-all.png" alt="">
-                <img src="images/map-items/map-metro.png" alt="" class="absolute-layer metro-bl">
-            
-                <!-- 地圖半透明遮罩 start 也可以節省dom資源 直接寫在before 改用class控制 -->
-                <!-- #map-mask: w100% h100% absolute left:0 top:0 bgc:rgba(0,0,0,.3) -->
-                <div id="map-mask" class="hidden"></div>
-                <!-- 地圖半透明遮罩 end -->
-                <!-- 各類別最外層容器 .items-wrapper : w100% h100% absolute left:0 top:0 -->
-                <div class="items-wrapper item-wrapper-A">
-                  <!-- 地圖上各個互動物件 .item 用data屬性加上要顯示在彈窗的資訊 -->
-                  <div
-                    class="item"
-                    data-name="彈窗標題A-1"
-                    data-imgurl="./imgA/0.png"
-                  >
-                    <a class="box-A-0 fancybox" href="images/imgA/box-0.jpg" title="斬龍山遺址公園">
-                      <img src="images/imgA/0.png" alt="">
-                      <!-- <p class="item-name">名字A-1</p> -->
+    <header class="main-menu">
+        <h1 class="icon icon-lab">
+            <a href="javascript:;">
+                <img src="images/logo.png" alt="">
+            </a>
+        </h1>
+        <nav class="menu-wrap">
+            <ul class="nav nav-list nav-list-dot">	
+                <li>
+                    <a class="accordion-heading" data-toggle="collapse" data-target="#submenu1-1">
+                        <span class="nav-header-primary">土城崛起</span>
+                        <span class="pull-right"><b class="caret"></b></span>
                     </a>
-                  </div>
-                </div>
-                <div class="items-wrapper item-wrapper-B">
-                  <div
-                    class="item "
-                    data-name="彈窗標題B-1"
-                    data-imgurl="./imgA/0.png"
-                  >
-                    <a class="box-B-0 fancybox row" href="images/imgB/box-1.jpg" title="家樂福">
-                      <img class="col-4" src="images/imgB/0.png" alt="">   
-                      <p class="item-name item-name-active col-8 align-self-end">
-                        <span>家樂福</span>
-                      </p>
+                    <ul class="nav nav-list collapse submenu1" id="submenu1-1">
+                        <li>
+                            <a class="accordion-heading" data-toggle="collapse" data-target="#submenu1-2">
+                                <span>大環境</span>  
+                                <span class="pull-right"><b class="caret"></b></span>
+                            </a>
+                            <ul class="nav nav-list collapse submenu2" id="submenu1-2">
+                                <li><a href="#" title="Title">關於我們</a></li>
+                                <li><a href="#" title="Title">建築亮點</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="nav nav-list nav-list-dot">	
+                <li>
+                    <a class="accordion-heading" data-toggle="collapse" data-target="#submenu2-1">
+                        <span class="nav-header-primary">宜居首選</span>
+                        <span class="pull-right"><b class="caret"></b></span>
                     </a>
-                  </div>
-                  <div
-                    class="item"
-                    data-name="彈窗標題B-2"
-                    data-imgurl="./imgA/0.png"
-                  >
-                    <a class="box-B-1 fancybox row" href="images/imgB/box-2.jpg" title="UNIQLO">
-                      <img class="col-4" src="images/imgB/1.png" alt="">
-                      <p class="item-name item-name-active col-8 align-self-end">
-                        <span>UNIQLO</span>  
-                      </p>
+                    <ul class="nav nav-list collapse submenu1" id="submenu2-1">
+                        <li>
+                            <a class="accordion-heading" data-toggle="collapse" data-target="#submenu2-2">
+                                <span>第二層</span>  
+                                <span class="pull-right"><b class="caret"></b></span>
+                            </a>
+                            <ul class="nav nav-list collapse submenu2" id="submenu2-2">
+                                <li><a href="#" title="Title">關於我們</a></li>
+                                <li><a href="#" title="Title">建築亮點</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="nav nav-list nav-list-dot">	
+                <li>
+                    <a class="accordion-heading" data-toggle="collapse" data-target="#submenu3-1">
+                        <span class="nav-header-primary">精工建築</span>
+                        <span class="pull-right"><b class="caret"></b></span>
                     </a>
-                  </div>
-                  <div
-                    class="item"
-                    data-name="彈窗標題B-2"
-                    data-imgurl="./imgA/0.png"
-                  > 
-                    <a class="box-B-2 fancybox row" href="images/imgB/box-3.jpg" title="藏壽司">
-                      <img class="col-4" src="images/imgB/2.png" alt="">
-                      <p class="item-name item-name-active col-8 align-self-end">
-                        <span>藏壽司</span> 
-                      </p>
+                    <ul class="nav nav-list collapse submenu1" id="submenu3-1">
+                        <li>
+                            <a class="accordion-heading" data-toggle="collapse" data-target="#submenu3-2">
+                                <span>第二層</span>  
+                                <span class="pull-right"><b class="caret"></b></span>
+                            </a>
+                            <ul class="nav nav-list collapse submenu2" id="submenu3-2">
+                                <li><a href="#" title="Title">關於我們</a></li>
+                                <li><a href="#" title="Title">建築亮點</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="nav nav-list nav-list-dot">	
+                <li>
+                    <a class="accordion-heading" data-toggle="collapse" data-target="#submenu4-1">
+                        <span class="nav-header-primary">職人團隊</span>
+                        <span class="pull-right"><b class="caret"></b></span>
                     </a>
-                  </div>
-                </div>
-                <div class="items-wrapper item-wrapper-C">
-                  <div
-                    class="item"
-                    data-name="彈窗標題C-1"
-                    data-imgurl="./imgA/0.png"
-                  >
-                    
-                    <a class="box-C-0 fancybox" href="images/imgB/box-0.jpg" title="土城醫院(長庚團隊)">
-                       <img src="images/imgC/0.png" alt="">
-                       <p class="item-name item-name-active">
-                         <span>土城醫院(長庚團隊)</span> 
-                       </p>
-                    </a> 
-                  </div>
-                  <div
-                    class="item"
-                    data-name="彈窗標題C-2"
-                    data-imgurl="./imgA/0.png"
-                  >
-                    <a class="box-C-1 fancybox" href="images/imgB/box-1.jpg" title="土城國民運動中心">
-                       <img src="images/imgC/1.png" alt="">
-                       <p class="item-name item-name-active">
-                         <span>土城國民運動中心</span> 
-                       </p>
+                    <ul class="nav nav-list collapse submenu1" id="submenu4-1">
+                        <li>
+                            <a class="accordion-heading" data-toggle="collapse" data-target="#submenu4-2">
+                                <span>第二層</span>  
+                                <span class="pull-right"><b class="caret"></b></span>
+                            </a>
+                            <ul class="nav nav-list collapse submenu2" id="submenu4-2">
+                                <li><a href="#" title="Title">關於我們</a></li>
+                                <li><a href="#" title="Title">建築亮點</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="nav nav-list nav-list-dot">	
+                <li>
+                    <a class="accordion-heading" data-toggle="collapse" data-target="#submenu5-1">
+                        <span class="nav-header-primary">媒體報導</span>
+                        <span class="pull-right"><b class="caret"></b></span>
                     </a>
-                  </div>
-                </div>
-                <div class="items-wrapper item-wrapper-D">
-                  <div
-                    class="item"
-                    data-name="彈窗標題D-0"
-                    data-imgurl="./imgA/0.png"
-                  >
-                    <a class="box-D-0 fancybox" href="images/imgD/box-0.jpg" title="勤樸丰硯">
-                      <img src="images/imgD/0.png" alt="" class="">
-                    </a>
-                    <!-- <p class="item-name">勤樸丰硯</p> -->
-                  </div>
-                  <div
-                    class="item"
-                    data-name="彈窗標題D-1"
-                    data-imgurl="./imgA/0.png"
-                  >
-                  <a class="box-C-1 fancybox" href="images/imgD/box-0.jpg" title="勤樸丰硯接待會館">
-                    <img src="images/imgD/1.png" alt="">
-                    <!-- <p class="item-name">接待會館</p> -->
+                    <ul class="nav nav-list collapse submenu1" id="submenu5-1">
+                        <li>
+                            <a class="accordion-heading" data-toggle="collapse" data-target="#submenu5-2">
+                                <span>第二層</span>  
+                                <span class="pull-right"><b class="caret"></b></span>
+                            </a>
+                            <ul class="nav nav-list collapse submenu2" id="submenu5-2">
+                                <li><a href="#" title="Title">關於我們</a></li>
+                                <li><a href="#" title="Title">建築亮點</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <ul>
+
+            </ul>
+        </nav>
+    </header>
+    <!--main content start-->
+    <div class="main">
+      <div id="map-wrapper">
+        <div id="map">
+          <div class="map-objects-wrapper">
+              <img src="images/map-items/map-all.png" alt="">
+              <img src="images/map-items/map-metro.png" alt="" class="absolute-layer metro-bl">
+              <div class="items-wrapper item-wrapper-A">
+                <!-- A -->
+                <div
+                  class="item itemA"
+                >
+                  <a class="box-A-0 fancybox" href="images/imgA/box-0.jpg" title="斬龍山遺址公園">
+                    <img src="images/imgA/0.png" alt="">
                   </a>
-                  </div>
                 </div>
-            </div>
+                <!-- B -->
+                <div
+                  class="item itemB"
+                >
+                  <a class="box-B-0 fancybox row" href="images/imgB/box-1.jpg" title="家樂福">
+                    <img class="col-4" src="images/imgB/0.png" alt="">   
+                    <p class="item-name item-name-active col-8 align-self-end">
+                      <span>家樂福</span>
+                    </p>
+                  </a>
+                </div>
+                <div
+                  class="item itemB"
+                >
+                  <a class="box-B-1 fancybox row" href="images/imgB/box-2.jpg" title="UNIQLO">
+                    <img class="col-4" src="images/imgB/1.png" alt="">
+                    <p class="item-name item-name-active col-8 align-self-end">
+                      <span>UNIQLO</span>  
+                    </p>
+                  </a>
+                </div>
+                <div
+                  class="item itemB"
+                > 
+                  <a class="box-B-2 fancybox row" href="images/imgB/box-3.jpg" title="藏壽司">
+                    <img class="col-4" src="images/imgB/2.png" alt="">
+                    <p class="item-name item-name-active col-8 align-self-end">
+                      <span>藏壽司</span> 
+                    </p>
+                  </a>
+                </div>
+                <!-- C -->
+                <div
+                  class="item itemC"
+                >
+                <a class="box-C-0 fancybox" href="images/imgB/box-0.jpg" title="土城醫院(長庚團隊)">
+                    <img src="images/imgC/0.png" alt="">
+                    <p class="item-name item-name-active">
+                      <span>土城醫院(長庚團隊)</span> 
+                    </p>
+                </a> 
+                </div>
+                <div
+                  class="item itemC"
+                >
+                  <a class="box-C-1 fancybox" href="images/imgB/box-1.jpg" title="土城國民運動中心">
+                    <img src="images/imgC/1.png" alt="">
+                    <p class="item-name item-name-active">
+                      <span>土城國民運動中心</span> 
+                    </p>
+                  </a>
+                </div>
+                <!-- D -->
+                <div
+                  class="item itemD"
+                >
+                  <a class="box-D-0 fancybox" href="images/imgD/box-0.jpg" title="勤樸丰硯">
+                    <img src="images/imgD/0.png" alt="" class="">
+                  </a>
+                </div>
+                <div
+                  class="item itemD"
+                >
+                <a class="box-C-1 fancybox" href="images/imgD/box-0.jpg" title="勤樸丰硯接待會館">
+                  <img src="images/imgD/1.png" alt="">
+                </a>
+                </div>
+                <!-- 遮罩 -->
+                <div id="map-mask"></div>
+              </div>
           </div>
         </div>
       </div>
-      <!--main content end-->
-      <section class="intro-area">
-        <div class="intro-main-content">
-          <div class="main-title">
-            <h2 class="para1">校園第一排</h2>
-            <h2 class="para2">永續人文靜謐感</h2>
-          </div>
-          <p class="intro-article">與新北高工為鄰，拉開視野的廣度與空間，迎進更多流動的風與充足光線，維持市區裡的一方安寧與居住安全，單純稀有的天賦環境，即使同樣在金城重劃區，卻擁有無可取代的安定感！</p>
+    </div>
+    <!--main content end-->
+    <section class="intro-area">
+      <div class="intro-main-content">
+        <div class="main-title">
+          <h2 class="para1">校園第一排</h2>
+          <h2 class="para2">永續人文靜謐感</h2>
         </div>
-        <!--panel start-->
-        <aside class="panel">
-          <ul class="type-btn-wrapper align-self-center" id="cy">
-              <li class="align-self-center" id="typeA-btn">綠覆生活</li>
-              <li class="align-self-center" id="typeB-btn">風格商圈</li>
-              <li class="align-self-center" id="typeC-btn">健康滿分</li>
-              <li class="align-self-center" id="typeD-btn">勤樸丰硯</li>
-          </ul>
-          <div class="scale-btn-wrapper">
-            <button id="scale-btn-plus" class="map-scale-btn">+</button>
-            <button id="scale-btn-minus" class="map-scale-btn">-</button>
-            <button id="scale-btn-return" class="map-scale-btn">↰</button>
-          </div>
-        </aside>
-        <!--panel end-->
-      </section>
+        <p class="intro-article">與新北高工為鄰，拉開視野的廣度與空間，迎進更多流動的風與充足光線，維持市區裡的一方安寧與居住安全，單純稀有的天賦環境，即使同樣在金城重劃區，卻擁有無可取代的安定感！</p>
+      </div>
+      <!--panel start-->
+      <aside class="panel">
+        <ul class="type-btn-wrapper align-self-center" id="cy">
+            <li class="align-self-center" id="typeA-btn">綠覆生活</li>
+            <li class="align-self-center" id="typeB-btn">風格商圈</li>
+            <li class="align-self-center" id="typeC-btn">健康滿分</li>
+            <li class="align-self-center" id="typeD-btn">勤樸丰硯</li>
+        </ul>
+        <div class="scale-btn-wrapper">
+          <button id="scale-btn-plus" class="map-scale-btn">+</button>
+          <button id="scale-btn-minus" class="map-scale-btn">-</button>
+        </div>
+      </aside>
+      <!--panel end-->
+    </section>
          
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/2.3.15/cytoscape.js"></script> -->
-  <script src="js/modernizr.custom.js"></script>
-  <script src="js/classie.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-  <script type="text/javascript" src="js/jquery.mousewheel.pack.js"></script>
-  <script>
-    $(document).ready(function() {
-        $('#map-mask').click(function(){
-            $(this).addClass('hidden');
-        });
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/2.3.15/cytoscape.js"></script> -->
+    <script src="js/modernizr.custom.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/jquery.mousewheel.pack.js"></script>
+    <!-- 拖曳library -->
+    <script src="./js/jquery-ui.min.js"></script>
+    <script src="./js/jquery.ui.touch-punch.min.js"></script>
+    <script>
+      $(document).ready(function() {
+
+        // 滑鼠點選類別
         $('#typeA-btn').click(function(){
-            $('.panel-active').removeClass('panel-active');
-            $(".toFront").removeClass("toFront");
-            $(this).addClass('panel-active');
-            $('.item-wrapper-A').addClass('toFront');
-            $('#map-mask').removeClass('hidden');
+          $("#map").animate(
+            { width: "100%", height: "100%", top: "0", left: "0" },
+            300
+          );
+          $("#map").removeClass("enlarged");
+          $('.panel-active').removeClass('panel-active');
+          $(this).addClass('panel-active');
+          $('.items-wrapper #map-mask').addClass('on')
+          $('.items-wrapper .item').removeClass('front')
+          $('.items-wrapper .itemA').addClass('front')
         });
         $('#typeB-btn').click(function(){
-            $('.panel-active').removeClass('panel-active');
-            $(".toFront").removeClass("toFront");
-            $(this).addClass('panel-active');
-            $('.item-wrapper-B').addClass('toFront');
-            $('#map-mask').removeClass('hidden');
+          $("#map").animate(
+            { width: "100%", height: "100%", top: "0", left: "0" },
+            300
+          );
+          $("#map").removeClass("enlarged");
+          $('.panel-active').removeClass('panel-active');
+          $(this).addClass('panel-active');
+          $('.items-wrapper #map-mask').addClass('on')
+          $('.items-wrapper .item').removeClass('front')
+          $('.items-wrapper .itemB').addClass('front')
         });
         $('#typeC-btn').click(function(){
-            $('.panel-active').removeClass('panel-active');
-            $(".toFront").removeClass("toFront");
-            $(this).addClass('panel-active');
-            $('.item-wrapper-C').addClass('toFront');
-            $('#map-mask').removeClass('hidden');
+          $("#map").animate(
+            { width: "100%", height: "100%", top: "0", left: "0" },
+            300
+          );
+          $("#map").removeClass("enlarged");
+          $('.panel-active').removeClass('panel-active');
+          $(this).addClass('panel-active');
+          $('.items-wrapper #map-mask').addClass('on')
+          $('.items-wrapper .item').removeClass('front')
+          $('.items-wrapper .itemC').addClass('front')
         });
         $('#typeD-btn').click(function(){
-            $('.panel-active').removeClass('panel-active');
-            $(".toFront").removeClass("toFront");
-            $(this).addClass('panel-active');
-            $('.item-wrapper-D').addClass('toFront');
-            $('#map-mask').removeClass('hidden');
+          $("#map").animate(
+            { width: "100%", height: "100%", top: "0", left: "0" },
+            300
+          );
+          $("#map").removeClass("enlarged");
+          $('.panel-active').removeClass('panel-active');
+          $('#map-mask').removeClass('on');
         });
-        
-        $('#scale-btn-return').click(function(){
-            $('.panel-active').removeClass('panel-active');
-            $(".toFront").removeClass("toFront");
-            $('#map-mask').addClass('hidden');
+
+        // 滑鼠hover類別 圖片highlight
+        $('#typeA-btn').mouseenter(function(){
+          $('.itemA').addClass('highlight')
+        })
+        $('#typeB-btn').mouseenter(function(){
+          $('.itemB').addClass('highlight')
+        })
+        $('#typeC-btn').mouseenter(function(){
+          $('.itemC').addClass('highlight')
+        })
+        $('#typeA-btn,#typeB-btn,#typeC-btn').mouseleave(function(){
+          $('.item').removeClass('highlight')
+        })
+
+        // 放大縮小地圖
+        $("#scale-btn-plus").click(function () {
+            $("#map").draggable({
+              drag: function (event, ui) {
+                var parent = ui.helper[0].parentNode;
+
+                var dragWidth = ui.helper[0].clientWidth;
+                var parentWidth = parent.clientWidth;
+                var dragHeight = ui.helper[0].clientHeight;
+                var parentHeight = parent.clientHeight;
+
+                var widthDifference = dragWidth - parentWidth;
+                var heightDifference = dragHeight - parentHeight;
+
+                if (ui.position.left > 0) ui.position.left = 0;
+                else if (ui.position.left < -widthDifference)
+                  ui.position.left = -widthDifference;
+
+                if (ui.position.top > 0) ui.position.top = 0;
+                else if (ui.position.top < -heightDifference)
+                  ui.position.top = -heightDifference;
+              },
+            });
+            $("#map").animate(
+              { width: "200%", height: "200%", top: "-50%", left: "-50%" },
+              300
+            );
+            $("#map").addClass("enlarged");
+            $("#map").draggable("enable");
         });
+        $('#scale-btn-minus').click(function(){
+          
+            $("#map").draggable("disable");
+            $("#map").animate(
+              { width: "100%", height: "100%", top: "0", left: "0" },
+              300
+            );
+            $("#map").removeClass("enlarged");
+        })
+
         $(".fancybox").fancybox({
-            openEffect  : "fade",
-            closeEffect : "fade",
-            type : "image",
-            helpers: {
-                title : {
-                    type : 'float'
-                }
-            }
-        });
-    });
-  </script>
+              openEffect  : "fade",
+              closeEffect : "fade",
+              type : "image",
+              helpers: {
+                  title : {
+                      type : 'float'
+                  }
+              }
+          });
+      });
+    </script>
   
   </body>
 </html>
